@@ -1,0 +1,17 @@
+Google AJAX APIs from a server:
+
+Here's a little example code for doing Google AJAX API calls from a server.
+Right now it's just a proof of concept using Rhino.
+
+Here's what we've got:
+  env.js - John Resig's "good enough browser/DOM environment"
+  ajax-environment.js - My additional bits of browser/DOM that were needed
+  language-api.js, feeds-api.js, search-api.js - examples
+  js.jar - Rhino 1.7R1
+
+To run them you do something like this:
+  java -jar js.jar -debug language-api.js
+
+js.jar is part of Rhino, under the GPL and LGPL I think
+env.js is copyright John Resig and MIT licensed
+the reset are copyright Ian McKellar and MIT licensed
